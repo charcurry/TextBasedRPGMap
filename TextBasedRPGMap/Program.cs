@@ -157,7 +157,6 @@ namespace TextBasedRPGMap
             DisplayMap(3);
 
             Console.WriteLine("Press any key to exit...");
-            Console.WriteLine('»');
             Console.ReadLine();
         }
     }
