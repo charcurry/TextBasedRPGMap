@@ -68,11 +68,21 @@ namespace TextBasedRPGMap
 
         static void ShowLegend()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("▲ - Mountains");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("» - Rivers");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(", - Grass");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("♣ - Trees");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("⌂ - Towns");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
         }
 
