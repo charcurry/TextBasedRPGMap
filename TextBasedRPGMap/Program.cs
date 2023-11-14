@@ -78,7 +78,7 @@ namespace TextBasedRPGMap
 
         static void DisplayMap(int scale)
         {
-            Console.Write('┼');
+            Console.Write('┌');
             for (int i = 0; i < map.GetLength(1); i++)
             {
                 for (int z = 0; z < scale; z++)
@@ -86,7 +86,7 @@ namespace TextBasedRPGMap
                     Console.Write('─');
                 }
             }
-            Console.Write('┼');
+            Console.Write('┐');
             Console.WriteLine();
             for (int y = 0; y < map.GetLength(0); y++)
             {
@@ -104,7 +104,7 @@ namespace TextBasedRPGMap
                     Console.WriteLine();
                 }
             }
-            Console.Write('┼');
+            Console.Write('└');
             for (int i = 0; i < map.GetLength(1); i++)
             {
                 for (int z = 0; z < scale; z++)
@@ -112,7 +112,7 @@ namespace TextBasedRPGMap
                     Console.Write('─');
                 }
             }
-            Console.Write('┼');
+            Console.Write('┘');
 
             Console.WriteLine();
             Console.WriteLine();
@@ -120,12 +120,12 @@ namespace TextBasedRPGMap
 
         static void DisplayMap()
         {
-            Console.Write('┼');
+            Console.Write('┌');
             for (int i = 0; i < map.GetLength(1); i++)
             {
                 Console.Write('─');
             }
-            Console.Write('┼');
+            Console.Write('┐');
             Console.WriteLine();
             for (int y = 0; y < map.GetLength(0); y++)
             {
@@ -137,12 +137,12 @@ namespace TextBasedRPGMap
                 Console.Write('│');
                 Console.WriteLine();
             }
-            Console.Write('┼');
+            Console.Write('└');
             for (int i = 0; i < map.GetLength(1); i++)
             {
                 Console.Write('─');
             }
-            Console.Write('┼');
+            Console.Write('┘');
 
             Console.WriteLine();
             Console.WriteLine();
