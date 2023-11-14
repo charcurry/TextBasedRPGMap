@@ -88,6 +88,7 @@ namespace TextBasedRPGMap
 
         static void DisplayMap(int scale)
         {
+            ShowLegend();
             Console.Write('┌');
             for (int i = 0; i < map.GetLength(1); i++)
             {
@@ -130,6 +131,7 @@ namespace TextBasedRPGMap
 
         static void DisplayMap()
         {
+            ShowLegend();
             Console.Write('┌');
             for (int i = 0; i < map.GetLength(1); i++)
             {
@@ -160,7 +162,6 @@ namespace TextBasedRPGMap
 
         static void Main(string[] args)
         {
-            ShowLegend();
             DisplayMap();
             DisplayMap(1);
             DisplayMap(2);
